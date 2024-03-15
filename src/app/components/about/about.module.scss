@@ -1,59 +1,87 @@
 .mainAbout {
-	padding: 6.4rem 16rem;
+	padding: 6.4rem 0;
 	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 1000px;
+
 	&:global {
 		animation-name: slowAppear;
 	}
+
 	animation-duration: 1.3s;
 
-	.title {
-		font-size: 3rem;
-		color: #f6f0ea;
-		font-family: "Orbitron", sans-serif;
-		font-weight: 100;
-	}
+	.leftSide {
+		width: 50%;
 
-	.profession {
-		color: #e9e4df;
-		font-size: 1.3rem;
-		font-weight: 500;
-		margin-top: 0.75rem;
-	}
+		.title {
+			font-size: 3rem;
+			color: #f6f0ea;
+			font-family: "Orbitron", sans-serif;
+			font-weight: 100;
+			line-height: 3rem;
+		}
 
-	p:first-of-type {
-		margin-top: 1.2rem;
-		font-weight: 300;
-		color: #e3ddd7;
-		max-width: 24rem;
-	}
-
-	.containerLi {
-		margin-top: 4rem;
-		list-style-position: inside;
-		.link {
-			margin-top: 1rem;
-			color: #d4cfc9;
+		.profession {
+			color: #e9e4df;
+			font-size: 1.3rem;
 			font-weight: 500;
+			margin-top: 0.75rem;
+		}
+
+		p:first-of-type {
+			margin-top: 1.2rem;
+			font-weight: 300;
+			color: #e3ddd7;
+			max-width: 24rem;
+		}
+
+		.containerLi {
+			margin-top: 4rem;
+			list-style-position: inside;
+
+			.link {
+				margin-top: 1rem;
+				color: #d4cfc9;
+				font-weight: 500;
+			}
+		}
+
+		.buttonDownload {
+			font-weight: 600;
+			padding: 11px 25px;
+			margin-top: 2rem;
+			border: 1px solid #5d5d5d;
+			background-color: #0000003d;
+			border-radius: 27px;
+			cursor: pointer;
+			color: #d4cfc9;
+			font-family: var(--font-inter);
+
+			&:hover,
+			&:focus {
+				animation: pulse 1s;
+				box-shadow: 0 0 0 2em transparent;
+				animation-iteration-count: infinite;
+
+			}
 		}
 	}
 
-	.buttonDownload {
-		font-weight: 600;
-		padding: 11px 25px;
-		margin-top: 2rem;
-		border: 1px solid #5d5d5d;
-		background-color: #0000003d;
-		border-radius: 27px;
-		cursor: pointer;
-		color: #d4cfc9;
-		font-family: var(--font-inter);
+	.rigthSide {
+		width: 50%;
 
-		&:hover,
-		&:focus {
-			animation: pulse 1s;
-			box-shadow: 0 0 0 2em transparent;
-            animation-iteration-count: infinite;
+		p:first-of-type {
+			margin-top: 10px;
+		}
 
+		p {
+			margin-bottom: 1rem;
+			color: #e3ddd7;
+			font-weight: 400;
+			font-size: 1rem;
+			line-height: 1.5rem;
 		}
 	}
 }

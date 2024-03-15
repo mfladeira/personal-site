@@ -1,13 +1,20 @@
 .main {
-  background-color: aqua;
-	background-image: radial-gradient(
+	background: linear-gradient(0deg, #1a1d2a, #1c1f2e), #ebeef6;
+	/* background-image: radial-gradient(
 		circle,
 		rgb(57, 15, 15),
 		rgb(49, 13, 13),
 		rgb(31, 8, 8),
 		rgb(0, 0, 0)
+	); */
+	background-image: radial-gradient(
+		circle,
+		#1a1d2a,
+		#141720,
+		#11131c,
+		rgb(0, 0, 0)
 	);
 	background-attachment: fixed;
-  height: 100vh;
-  width: 100vw;
+	height: 100vh;
+	width: 100vw;
 }
