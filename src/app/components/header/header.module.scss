@@ -6,11 +6,9 @@
 	align-items: center;
 	border-bottom: 1px solid #f6f0ea1f;
 
-	&:global {
-		animation-name: slowAppear;
-	}
-
-	animation-duration: 1.5s;
+	position: relative;
+	animation-name: showingHeader;
+	animation-duration: .6s;
 
 	.container {
 		display: flex;
@@ -43,5 +41,36 @@
 			}
 		}
 
+	}
+}
+
+@keyframes showingHeader {
+	0% {
+		top: -140px;
+		opacity: 0;
+	}
+
+	20% {
+		top: -112px;
+		opacity: 0.1;
+	}
+
+	40% {
+		top: -84px;
+		opacity: .2;
+	}
+
+	60% {
+		top: -46px;
+	}
+
+	80% {
+		top: -18px;
+		opacity: .3;
+	}
+
+	100% {
+		top: 0px;
+		opacity: 1;
 	}
 }
