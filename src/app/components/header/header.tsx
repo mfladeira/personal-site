@@ -6,6 +6,7 @@ const Header = () => {
 		<header className={styles.header}>
 			<div className={styles.container}>
 				<img className={styles.logo} src="/ferreiras-branco.png" alt="logo" />
+				<img src="nav.svg" className={styles.navIcon}/>
 				<nav className={styles.rightSide}>
 					<ul className={styles.nav}>
 						<li>

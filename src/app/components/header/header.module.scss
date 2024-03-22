@@ -5,10 +5,11 @@
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid #f6f0ea1f;
-
 	position: relative;
 	animation-name: showingHeader;
-	animation-duration: .6s;
+
+	animation-duration: 1.5s;
+	animation-timing-function: linear;
 
 	.container {
 		display: flex;
@@ -19,6 +20,17 @@
 
 		.logo {
 			width: 20rem;
+		}
+
+		.navIcon {
+			cursor: pointer;
+			width: 30px;
+			display: none;
+
+			&:hover {
+				opacity: .4;
+				transition: .3s;
+			}
 		}
 
 		.rightSide {
@@ -32,7 +44,7 @@
 				padding: 0 1em;
 				text-decoration: none;
 				cursor: pointer;
-				color: #f6f0ea;
+				color: #E3E7F0;
 
 				&:hover {
 					opacity: 0.4;
@@ -50,27 +62,53 @@
 		opacity: 0;
 	}
 
-	20% {
-		top: -112px;
-		opacity: 0.1;
+
+	50% {
+		top: -75px;
+		opacity: .1;
 	}
 
-	40% {
-		top: -84px;
-		opacity: .2;
-	}
-
-	60% {
-		top: -46px;
-	}
-
-	80% {
-		top: -18px;
-		opacity: .3;
-	}
 
 	100% {
 		top: 0px;
 		opacity: 1;
+	}
+}
+
+@media (max-width: 1050px) {
+	.header {
+		padding: 20px 5.2rem;
+	}
+}
+
+@media (max-width: 920px) {
+	.header {
+		.container {
+			.rightSide {
+				display: none;
+			}
+
+			.navIcon {
+				display: block;
+			}
+		}
+	}
+}
+
+@media (max-width: 650px) {
+	.header {
+		padding: 20px 3rem;
+
+		.container {
+			.logo {
+				width: 15rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 520px) {
+	.header {
+		padding: 20px 1.5rem;
 	}
 }
