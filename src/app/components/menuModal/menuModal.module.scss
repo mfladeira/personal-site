@@ -1,0 +1,114 @@
+.MenuModal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 500;
+    backdrop-filter: blur(27px);
+    padding: 62px 90px;
+    display: flex;
+    flex-direction: column;
+
+    &.open {
+        animation-name: openModal;
+        animation-duration: .5s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    &.closing {
+        animation-name: closeModal;
+        animation-duration: .5s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+
+    .iconMenu {
+        cursor: pointer;
+        width: 1.4em;
+        height: 1.4em;
+        align-self: flex-end;
+
+        &:hover {
+            scale: 1.2;
+            transition: .3s;
+        }
+    }
+
+    .containerButtons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        .btn {
+            width: 550px;
+            font-family: var(--font-inter);
+            padding: 13px 0;
+            margin: 10px 0;
+            font-size: 16px;
+            font-weight: 500;
+            border: none;
+            border-radius: 15px;
+            background-color: rgb(40 40 40 / 28%);
+            color: #E3E7F0;
+            border: 1px solid rgba(142, 142, 142, 0.28);
+            cursor: pointer;
+        
+            &:hover {
+                opacity: .5;
+                transition: .3s;
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .MenuModal {
+        padding: 62px 3rem;
+
+        .containerButtons {
+            .btn {
+                width: 85%;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .MenuModal {
+        padding: 62px 1.5rem;
+    }
+}
+
+@keyframes openModal {
+    0% {
+        right: -100vw;
+    }
+
+    50% {
+        right: -50vw;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes closeModal {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 50vw;
+    }
+
+    100% {
+        left: 100vw;
+        display: none;
+    }
+}

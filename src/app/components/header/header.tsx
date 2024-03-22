@@ -1,12 +1,22 @@
+"use client";
 import Image from "next/image";
 import styles from "./header.module.scss";
+import MenuModal from "../menuModal/menuModal";
+import { useState } from "react";
 
 const Header = () => {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+
 	return (
 		<header className={styles.header}>
 			<div className={styles.container}>
-				<img className={styles.logo} src="/ferreiras-branco.png" alt="logo" />
-				<img src="nav.svg" className={styles.navIcon}/>
+				<img className={styles.logo} src="/ferreiras-branco.png" alt="Icon of logo" />
+				<img
+					src="nav.svg"
+					alt="Icon of navbar"
+					className={styles.navIcon}
+					onClick={() => setIsModalOpen(!isModalOpen)}
+				/>
 				<nav className={styles.rightSide}>
 					<ul className={styles.nav}>
 						<li>
@@ -45,6 +55,7 @@ const Header = () => {
 					</ul>
 				</nav>
 			</div>
+			<MenuModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}></MenuModal>
 		</header>
 	);
 };
