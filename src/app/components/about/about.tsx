@@ -3,7 +3,7 @@ import styles from "./about.module.scss";
 const About = () => {
 	return (
 		<>
-			<section className={styles.mainAbout}>
+			<section className={styles.mainAbout} id="mainSection">
 				<div className={styles.containerSides}>
 					<section className={styles.leftSide}>
 						<h1 className={styles.title}>Mateus Ferreira</h1>
@@ -30,7 +30,7 @@ const About = () => {
 							<button className={styles.buttonDownload}>View Full Resume</button>
 						</a>
 					</section>
-					<section className={styles.rigthSide}>
+					<section className={styles.rigthSide} id="experiencesSection">
 						<p>
 							My interest in technology came to life when my brother brought an Arduino project home.
 							Although it was something simple, consisting only of sensors and LEDs, that experience

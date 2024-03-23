@@ -2,6 +2,7 @@
 import Header from "./components/header/header";
 import styles from "./page.module.css";
 import About from "./components/about/about";
+import Experiences from "./components/experiences/experiences";
 
 export default function Home() {
 	// const displayLight = (event: any) => {
@@ -14,6 +15,7 @@ export default function Home() {
 		<main className={styles.main}>
 			<Header />
 			<About />
+			<Experiences />
 		</main>
 	);
 }

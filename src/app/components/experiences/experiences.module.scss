@@ -1,0 +1,24 @@
+.Experiences {
+    padding: 3rem 9rem;
+    display: flex;
+    position: relative;
+
+    &:global {
+        animation-name: slowAppear;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    .title {
+        color: #E3E7F0;
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+
+    .containerExperiences {
+        width: 1050px;
+        margin: 0 auto;
+    }
+}

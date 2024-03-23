@@ -20,12 +20,12 @@ const Header = () => {
 				<nav className={styles.rightSide}>
 					<ul className={styles.nav}>
 						<li>
-							<a href="" className={styles.link}>
+							<a href="#mainSection" className={styles.link}>
 								About
 							</a>
 						</li>
 						<li>
-							<a href="" className={styles.link}>
+							<a href="#experiencesSection" className={styles.link}>
 								Experience
 							</a>
 						</li>
