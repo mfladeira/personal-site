@@ -16,11 +16,11 @@ const About = () => {
 							<li className={styles.link}>
 								<strong>
 									Over <u>3 years experience</u>
-								</strong>{" "}
+								</strong>
 								in Frontend development
 							</li>
 							<li className={styles.link}>
-								Main stacks:{" "}
+								Main stacks:
 								<strong>
 									<u>React</u> and <u>Angular</u>
 								</strong>
@@ -35,15 +35,15 @@ const About = () => {
 							My interest in technology came to life when my brother brought an Arduino project home.
 							Although it was something simple, consisting only of sensors and LEDs, that experience
 							sparked something in me. It was as if a new dimension had opened up before my eyes, and
-							since then, I couldn't stray from this path anymore.
+							since then, I couldn&apos;t stray from this path anymore.
 						</p>
 						<p>
 							My main focus today is building accessible user interfaces for my own customers at
-							Ferreira's. I am committed to creating web applications that meet the specific needs of each
+							Ferreira&apos;s. I am committed to creating web applications that meet the specific needs of each
 							project accurately.
 						</p>
 						<p>
-							When I'm away from the screen, I'm usually running in the park, reading, hanging out with my
+							When I&apos;m away from the screen, I&apos;m usually running in the park, reading, hanging out with my
 							wife, or writing about things that I like.
 						</p>
 					</section>
