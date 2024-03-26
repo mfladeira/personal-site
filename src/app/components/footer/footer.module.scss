@@ -1,0 +1,13 @@
+.Footer {
+    background-color: rgb(0 0 0 / 15%);
+
+    .text {
+        display: block;
+        font-family: var(--font-inter);
+        font-size: 13px;
+        text-align: center;
+        padding: 15px 0;
+        color: #b4becb;
+        border-top: 1px solid #f6f0ea1f;
+    }
+}
