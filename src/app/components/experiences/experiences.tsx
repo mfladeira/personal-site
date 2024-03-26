@@ -8,7 +8,7 @@ const Experiences = () => {
 				<div className={styles.containerExperiences}>
 					<h2 className={styles.title}>Experiences</h2>
 					<CardExperience
-						title="Front End Developer - Freelancer"
+						title="Front End Developer - DelOffshore"
 						period="May 2023 - Currently, Brazil"
 						items={[
 							"Developed custom landing pages using HTML + SASS + JS that meet the specific needs of each client.",

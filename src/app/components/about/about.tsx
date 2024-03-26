@@ -38,8 +38,8 @@ const About = () => {
 							since then, I couldn&apos;t stray from this path anymore.
 						</p>
 						<p>
-							My main focus today is building accessible user interfaces for my own customers at
-							Ferreira&apos;s. I am committed to creating web applications that meet the specific needs of each
+							My main focus today is building accessible user interfaces for customers at
+							DelOffshore. I am committed to creating web applications that meet the specific needs of each
 							project accurately.
 						</p>
 						<p>
