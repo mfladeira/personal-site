@@ -8,7 +8,7 @@ const Header = () => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 
 	return (
-		<header className={styles.header}>
+		<header className={styles.header} id="mainSection">
 			<div className={styles.container}>
 				<img className={styles.logo} src="/ferreiras-branco.png" alt="Icon of logo" />
 				<img
@@ -30,7 +30,7 @@ const Header = () => {
 							</a>
 						</li>
 						<li>
-							<a href="" className={styles.link}>
+							<a href="#sectionProject" className={styles.link}>
 								Projects
 							</a>
 						</li>

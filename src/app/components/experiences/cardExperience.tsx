@@ -3,8 +3,8 @@ import styles from "./cardExperience.module.scss";
 interface ICardExperience {
 	title: string;
 	period: string;
-	items: String[];
-	technologies: String[];
+	items: string[];
+	technologies: string[];
 }
 
 const CardExperience = (props: ICardExperience) => {
@@ -16,12 +16,12 @@ const CardExperience = (props: ICardExperience) => {
 			</div>
 			<ul className={styles.ul}>
 				{props.items.map((item) => (
-					<li>{item}</li>
+					<li key={item}>{item}</li>
 				))}
 			</ul>
 			<div className={styles.containerTechnologies}>
 				{props.technologies.map((tech) => (
-					<span>{tech}</span>
+					<span key={tech}>{tech}</span>
 				))}
 			</div>
 		</div>

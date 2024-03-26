@@ -49,12 +49,11 @@ const Projects = () => {
 	];
 
 	return (
-		<main className={styles.Projects}>
+		<main className={styles.Projects} id="sectionProject">
 			<div className={styles.containerProjects}>
 				<h2 className={styles.title}>Projects</h2>
-
 				{projects.map((project) => (
-					<CardProject {...project}></CardProject>
+					<CardProject key={project.title} {...project}></CardProject>
 				))}
 			</div>
 		</main>

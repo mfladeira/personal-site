@@ -18,7 +18,7 @@ const CardProject = (props: ICardProject) => {
 				<p className={styles.description}>{props.description}</p>
 				<div className={styles.containerTechnologies}>
 					{props.techonologies.map((tech) => (
-						<span>{tech}</span>
+						<span key={tech}>{tech}</span>
 					))}
 				</div>
 				<div className={styles.containerIcons}>
