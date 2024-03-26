@@ -2,7 +2,7 @@
     background-color: rgb(255 255 255 / 4%);
     border: 1px solid #3c3c3c;
     border-radius: 15px;
-    padding: 20px 25px;
+    padding: 20px 25px 10px 25px;
     cursor: pointer;
     margin-bottom: 1.5rem;
 
@@ -46,6 +46,8 @@
 
     .containerTechnologies {
         margin-top: 1.2rem;
+        display: flex;
+        flex-wrap: wrap;
 
         span {
             color: #babfc5;
@@ -55,6 +57,19 @@
             padding: 8px 8px;
             border-radius: 15px;
             font-weight: 500;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .CardExperience {
+        .containerTitle {
+            flex-direction: column;
+
+            >span {
+                margin-bottom: 5px;
+            }
         }
     }
 }

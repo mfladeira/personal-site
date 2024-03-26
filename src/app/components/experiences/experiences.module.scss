@@ -22,3 +22,25 @@
         margin: 0 auto;
     }
 }
+
+@media (max-width: 1050px) {
+    .Experiences {
+        padding: 3rem 5.2rem;
+
+        .containerExperiences {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .Experiences {
+        padding: 3rem 3rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .Experiences {
+        padding: 3rem 1.5rem;
+    }
+}
