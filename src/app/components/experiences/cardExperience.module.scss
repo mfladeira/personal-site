@@ -11,6 +11,10 @@
         transition: .5s;
     }
 
+    &:last-child {
+        margin-bottom: 0;
+    }
+
     .containerTitle {
         font-family: var(--font-inter);
         color: #afbdcf;

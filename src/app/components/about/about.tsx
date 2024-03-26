@@ -2,7 +2,7 @@ import styles from "./about.module.scss";
 
 const About = () => {
 	return (
-		<>
+		<main>
 			<section className={styles.mainAbout} id="mainSection">
 				<div className={styles.containerSides}>
 					<section className={styles.leftSide}>
@@ -49,8 +49,8 @@ const About = () => {
 					</section>
 				</div>
 			</section>
-			<hr className={styles.lineBreak} />
-		</>
+			<hr className="lineBreak" />
+		</main>
 	);
 };
 

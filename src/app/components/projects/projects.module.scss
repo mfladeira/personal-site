@@ -1,0 +1,49 @@
+.Projects {
+    padding: 3rem 9rem;
+    display: flex;
+    position: relative;
+
+    &:global {
+        animation-name: slowAppear;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    .containerProjects {
+        width: 1050px;
+        margin: 0 auto;
+
+
+        .title {
+            color: #E3E7F0;
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .Projects {
+        flex-direction: column;
+        padding: 3rem 5.2rem;
+
+        .containerProjects {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .Projects {
+        padding: 3rem 3rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .Projects {
+        padding: 3rem 1.5rem;
+    }
+}

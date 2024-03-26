@@ -1,0 +1,80 @@
+.CardProject {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 6rem;
+
+    .projectImage {
+        box-shadow: 5px 7px 5px #00000054;
+        border-radius: 50px;
+        width: 55%;
+    }
+
+    .containerTextContent {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .title {
+            font-size: 17px;
+            font-weight: 500;
+            color: #E3E7F0;
+            text-align: right;
+        }
+
+        .description {
+            margin-top: 1rem;
+            font-size: 15px;
+            color: #94A3b8;
+            text-align: right;
+        }
+
+        .containerTechnologies {
+            margin-top: 1rem;
+            text-align: end;
+
+            span {
+                font-size: 12.5px;
+                color: #8492a5;
+                margin: 0 5px;
+            }
+        }
+
+        .containerIcons {
+            margin-top: 1rem;
+            text-align: end;
+
+            .link {
+                &:hover {
+                    opacity: .6;
+                    transition: .3s;
+                }
+
+                .github {
+                    width: 21px;
+                }
+
+                .visit {
+                    width: 21px;
+                    color: white;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .CardProject {
+        flex-direction: column;
+
+        .projectImage {
+            width: 100%;
+        }
+
+        .containerTextContent {
+            width: 100%;
+        }
+    }
+}
