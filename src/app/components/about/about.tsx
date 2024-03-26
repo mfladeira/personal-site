@@ -26,7 +26,7 @@ const About = () => {
 								</strong>
 							</li>
 						</ul>
-						<a href="/resumeMateus.pdf" target="_blank">
+						<a href="/resumeMateusFerreira.pdf" target="_blank">
 							<button className={styles.buttonDownload}>View Full Resume</button>
 						</a>
 					</section>
