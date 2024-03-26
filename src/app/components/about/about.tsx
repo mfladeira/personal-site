@@ -17,10 +17,10 @@ const About = () => {
 								<strong>
 									Over <u>3 years experience</u>
 								</strong>
-								in Frontend development
+								{" "}in Frontend development
 							</li>
 							<li className={styles.link}>
-								Main stacks:
+								Main stacks: {" "}
 								<strong>
 									<u>React</u> and <u>Angular</u>
 								</strong>
